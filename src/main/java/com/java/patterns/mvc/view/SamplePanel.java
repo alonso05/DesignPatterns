@@ -11,8 +11,6 @@ import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
 import com.java.patterns.mvc.controller.SampleAppController;
-import com.java.patterns.mvc.model.Whatsit;
-import com.java.patterns.mvc.model.Widget;
 
 public class SamplePanel extends JPanel{
 	
@@ -112,8 +110,6 @@ public class SamplePanel extends JPanel{
 	
 	private void setupListners(){
 		createWidgetButton.addActionListener(new ActionListener(){
-
-			@Override
 			public void actionPerformed(ActionEvent click) {
 				String description = descriptionField.getText();
 				double currentWeight = 0.0;
@@ -137,8 +133,6 @@ public class SamplePanel extends JPanel{
 		});
 		
 		createWhatlistButton.addActionListener(new ActionListener(){
-
-			@Override
 			public void actionPerformed(ActionEvent click) {
 				String name = nameField.getText();
 				int size = 0;

@@ -98,8 +98,6 @@ public class UpdateWWpanel extends JPanel{
 	
 	private void setupListners(){
 		createWidgetButton.addActionListener(new ActionListener(){
-
-			@Override
 			public void actionPerformed(ActionEvent click) {
 				String description = descriptionField.getText();
 				double currentWeight = 0.0;
@@ -123,8 +121,6 @@ public class UpdateWWpanel extends JPanel{
 		});
 		
 		createWhatlistButton.addActionListener(new ActionListener(){
-
-			@Override
 			public void actionPerformed(ActionEvent click) {
 				String name = nameField.getText();
 				int size = 0;
@@ -148,7 +144,6 @@ public class UpdateWWpanel extends JPanel{
 		
 		
 		btnCheckValues.addActionListener(new ActionListener(){
-			@Override
 			public void actionPerformed(ActionEvent click) {
 				baseController.getAppFrame().layout.show(baseController.getAppFrame().pane, "fetchPanel");
 			}
