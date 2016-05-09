@@ -45,7 +45,7 @@ public class Validator {
 				errorHandler.getErrors().put(field, new ArrayList<String>());
 
 			String satisfier = rule.getValue();
-			if(!(boolean) method.invoke(this, field, value, satisfier)){
+			if(!(Boolean) method.invoke(this, field, value, satisfier)){
 				
 				String msg = messages.get(rule.getKey()).replace(":field", field).replace(":satisfier", satisfier);
 				System.out.println("Adding Error on field: " + field + " " + msg);
